@@ -6,6 +6,8 @@
 <html>
 <head>
 <title>readPage.jsp</title>
+<script type="text/javascript" src="/resources/js/upload.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.1/handlebars.js"></script>
 
 <style type="text/css">
     .popup {position: absolute;}
@@ -21,8 +23,6 @@
      } 
 </style>
 
-<script type="text/javascript" src="/resources/js/upload.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.1/handlebars.js"></script>
 </head>
 
 <body>
