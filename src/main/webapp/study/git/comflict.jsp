@@ -12,5 +12,8 @@
 <body>
    <h1>comflict.jsp</h1>
    
+   <p>
+   	  Hello comflict 해결..
+   </p>
 </body>
 </html>
