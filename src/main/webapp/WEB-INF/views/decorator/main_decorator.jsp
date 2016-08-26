@@ -450,13 +450,15 @@
 		<!-- Content Wrapper. Contains Page Content -->
 		<div class="content-wrapper">
 				<section class="content">
-					<!-- MMMMMMMMMMMMMMMMMM -->
+					<!-- ################## -->
 					<!-- Start Main Content -->
-					<!-- WWWWWWWWWWWWWWWWWW -->
+					<!-- ################## -->
+					<div class="container-fluid">  <!-- ←가운데정렬이 가능하다.  -->
 					<sitemesh:write property="body" />
-					<!-- MMMMMMMMMMMMMMMM -->
+					</div>
+					<!-- ################ -->
 					<!-- End Main Content -->
-					<!-- WWWWWWWWWWWWWWWW -->
+					<!-- ################ -->
 				</section>
 		</div>
 	
@@ -563,8 +565,7 @@
 					</div>
 					<!-- /.tab-pane -->
 					<!-- Stats tab content -->
-					<div class="tab-pane" id="control-sidebar-stats-tab">Stats Tab
-						Content</div>
+					<div class="tab-pane" id="control-sidebar-stats-tab">Stats Tab Content</div>
 					<!-- /.tab-pane -->
 					<!-- Settings tab content -->
 					<div class="tab-pane" id="control-sidebar-settings-tab">
