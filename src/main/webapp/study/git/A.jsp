@@ -11,14 +11,14 @@
 </head>
 <body>
 <h1>A.jsp</h1>
-   
+
  <ul>
  	<li>java</li>
  	<li>javascript</li>
  	<li>bootstrap</li>
- 	<li>html</li>
+ 	<li>jQuery</li>
  	
  </ul>
-   
+
 </body>
 </html>
