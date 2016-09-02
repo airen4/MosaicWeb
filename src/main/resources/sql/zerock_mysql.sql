@@ -1,6 +1,7 @@
 --
 -- DROP table
 --
+DROP TABLE tbl_message;
 DROP TABLE tbl_member;
 DROP TABLE tbl_user;
 
@@ -67,6 +68,29 @@ CREATE TABLE tbl_board
    PRIMARY KEY(bno)
 );
 
+
+--
+-- tbl_message
+--
+
+CREATE TABLE tbl_message
+(
+   mid        int NOT NULL AUTO_INCREMENT,
+   targetid   varchar(50) NOT NULL,
+   sender     varchar(50) NOT NULL,
+   message    text NOT NULL,
+   opendate   timestamp,
+   senddate   timestamp NOT NULL DEFAULT now(),
+   PRIMARY KEY(mid)
+);
+
+alter table tbl_message add constraint fk_usertarget
+foreign key (targetid) references tbl_user (uid);
+
+alter table tbl_message add constraint fk_usersender
+foreign key (sender) references tbl_user (uid);
+
+
 --
 -- tbl_reply
 --
@@ -97,3 +121,5 @@ CREATE TABLE tbl_attach
 
 ALTER TABLE tbl_attach
   ADD CONSTRAINT fk_borad_attach FOREIGN KEY(bno) REFERENCES tbl_board(bno);
+  
+  
